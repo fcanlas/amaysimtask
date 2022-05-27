@@ -58,7 +58,7 @@ def referafriend(driver):
                 print(thanksforshare.text)
             else:
                 #Checking if the invalid mail was sent
-                thanksforshare = wait.until(EC.visibility_of_element_located((By.XPATH, "//span[@class='Text-markdown-container false']/p[text()='Tend your friends an email']")))
+                thanksforshare = wait.until(EC.visibility_of_element_located((By.XPATH, "//span[@class='Text-markdown-container false']/p[text()='Send your friends an email']")))
                 print(thanksforshare.text)
             
             #Share again
