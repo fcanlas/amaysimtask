@@ -46,13 +46,13 @@ def main():
     #Services
     wait = WebDriverWait(driver, 20)
     service = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'My New Sim Nickname')]")))
-    service.click()
     print(service.text)
+    service.click()
     
     #My New Sim Nickname
     newsimnickname = wait.until(EC.element_to_be_clickable((By.XPATH, "//*[contains(text(), 'Refer a friend')]")))
-    newsimnickname.click()
     print(newsimnickname.text)
+    newsimnickname.click()
     
     #Refer a friend
     wait = WebDriverWait(driver, 60)
